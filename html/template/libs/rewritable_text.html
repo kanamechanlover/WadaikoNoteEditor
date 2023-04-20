@@ -1,0 +1,45 @@
+<!-- 書き換え可能なテキスト要素のテンプレート -->
+<template id="rewritable-text-template">
+    <style>
+        #frame {
+            display: inline-block;
+            position: relative;
+            line-height: 0px;
+            border: 1px solid transparent;
+        }
+        #frame:hover {
+            border: 1px solid gray;
+            border-radius: 8px;
+            background-color: silver;
+        }
+        #auto-sizing {
+            display: inline-block;
+            overflow: hidden;
+            min-width: 1em;
+            padding: 1px 4px;
+            white-space: nowrap;
+            opacity: 0;
+            line-height: 1.4em;
+            border-width: 0px;
+        }
+        #text-area {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 1.4em;
+            padding: 1px 0px;
+            top: 0px;
+            left: 0px;
+            cursor: default;
+            background-color: transparent;
+            border: 1px solid transparent;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: inherit;
+        }
+    </style>
+    <div id="frame">
+        <div id="auto-sizing"></div>
+        <input id="text-area" type="text" />
+    </div>
+</template>

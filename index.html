@@ -1,0 +1,79 @@
+<!doctype html>
+
+<head>
+    <title>WadaikoNoteEditor - 和太鼓楽譜エディタ -</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+    <script charset="utf-8" src="js/import.js"></script>
+    <!-- canvas for IE -->
+    <!--[if IE]>
+        <script type="text/javascript" src="excanvas.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="OnLoaded();" oncontextmenu="OnRightClick(event); return false;" style="background-color: silver; width: 100%; padding: 0px;">
+    <note-select-menu id="note-select-menu"></note-select-menu>
+    <score-part-inserter></score-part-inserter>
+    <score-paper id="paper">
+        <score-title>New Score</score-title>
+        <score-author align="center">著：Kaname chan</score-author>
+        <score-line-inserter></score-line-inserter>
+        <score-line>
+            <score-part partname="中">
+                <score-measure beginbar="1" endbar="1">
+                    <note-cluster type="0" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="2" accent="" song="どん"></note-cluster>
+                    <note-cluster type="3" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="4" accent="" song="どん"></note-cluster>
+                    <note-cluster type="5" accent="" song="どん"></note-cluster>
+                    <note-cluster type="6" accent="" song="どん"></note-cluster>
+                    <note-cluster type="7" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="8" accent="" song="どん"></note-cluster>
+                    <note-cluster type="9" accent="" song="どん"></note-cluster>
+                    <note-cluster type="10" accent="" song="どん"></note-cluster>
+                    <note-cluster type="11" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="12" accent="" song="どん"></note-cluster>
+                    <note-cluster type="13" accent="" song="どん"></note-cluster>
+                    <note-cluster type="14" accent="" song="どん"></note-cluster>
+                    <note-cluster type="15" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <crescendo type="0" index="0"></crescendo>
+            </score-part>
+            <score-part partname="締">
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <score-measure beginbar="0" endbar="0">
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                    <note-cluster type="1" accent="" song="どん"></note-cluster>
+                </score-measure>
+                <crescendo type="0" index="0"></crescendo>
+            </score-part>
+        </score-line>
+        <score-line-inserter></score-line-inserter>
+    </score-paper>
+</body>
